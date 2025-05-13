@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+
+    <div class="logo"><a href="index.html" style="text-decoration: none; color: inherit;">SQUAD-56<span class="reg">&reg;</span></a></div>
+
+    <a href="index.html">
+        <div class="logo-img"></div>
+    </a>
+    <div class="heading">
+        <p id="project">PROJECTS</p>
+        <p class="websites">WEBSITES</p>
+    </div>
+
+    <div class="card-container">
+        <div class="card flex-center barber">
+            <img src="./ASSETS/barber.png" class="web-img">
+        </div>
+        <div class="card naadbrahma">
+            <img src="./ASSETS/Naad Brahma.png" class="web-img">
+        </div>
+        <div class="card vibes">
+            <img src="./ASSETS/Vibes n coffee.png" class="web-img">
+        </div>
+        <div class="card rental">
+            <img src="./ASSETS/rental car.png" class="web-img">
+        </div>
+        <div class="card staypawsitive">
+            <img src="./ASSETS/staypawsitive.png" class="web-img">
+        </div>
+        <div class="card stylux">
+            <img src="./ASSETS/Stylux.png" class="web-img">
+        </div>
+        <div class="card lovecare">
+            <img src="./ASSETS/LoveCare.png" class="web-img">
+        </div>
+        <div class="card dyaanshala">
+            <img src="./ASSETS/dhyaanshala.png" class="web-img">
+        </div>
+        <div class="card cgi">
+            <img src="./ASSETS/cgi.png" class="web-img">
+        </div>
+        <div class="card security">
+            <img src="./ASSETS/Security.png" class="web-img">
+        </div>
+        <div class="card portfolio">
+            <img src="./ASSETS/chinmayee portfolio.png" class="web-img">
+        </div>
+        <div class="card forest">
+            <img src="./ASSETS/Forest project.png" class="web-img">
+        </div>
+        <div class="card travel">
+            <img src="./ASSETS/World Wide Travel.png" class="web-img">
+        </div>
+        <div class="card shopease">
+            <img src="./ASSETS/shopease1.png" class="web-img">
+        </div>
+        <div class="card dreamCafe">
+            <img src="./ASSETS/dreamcafe.jpg" class="web-img">
+        </div>
+        <div class="card human">
+            <img src="./ASSETS/HUMAAN.png" class="web-img">
+        </div>
+        <div class="card sound">
+            <img src="./ASSETS/Brahma Sound.jpg" class="web-img">
+        </div>
+    </div>
+
+    <div>
+        <p class="websites games">GAMES</p>
+    </div>
+
+    <div class="card-container games-container">
+        <div class="card dots">
+            <img src="./ASSETS/dots and boxes.png" class="web-img">
+        </div>
+        <div class="card zombie">
+            <img src="./ASSETS/Zombie Undead.png" class="web-img">
+        </div>
+        <div class="card snakeGame">
+            <img src="./ASSETS/snakegame.png" class="web-img">
+        </div>
+        <div class="card syncro">
+            <img src="./ASSETS/syncro Minds.png" class="web-img">
+        </div>
+        <div class="card Ladder">
+            <img src="./ASSETS/Ladder Legacy.png" class="web-img">
+        </div>
+        <div class="card hangman">
+            <img src="./ASSETS/Hangman.png" class="web-img">
+        </div>
+        <div class="card aero">
+            <img src="./ASSETS/aero blocks adventure.png" class="web-img">
+        </div>
+        <div class="card jungle">
+            <img src="./ASSETS/Jungle Matrix.png" class="web-img">
+        </div>
+        <div class="card TypeRacer">
+            <img src="./ASSETS/TypeRacer.png" class="web-img">
+        </div>
+        <div class="card quiz">
+            <img src="./ASSETS/Quiz Game.png" class="web-img">
+        </div>
+        <div class="card sweetswipe">
+            <img src="./ASSETS/sweetswipe.png" class="web-img">
+        </div>
+        <div class="card archery">
+            <img src="./ASSETS/archery3d.png" class="web-img">
+        </div>
+        <div class="card puzzle">
+            <img src="./ASSETS/puzzle.png" class="web-img">
+        </div>
+        <div class="card maze">
+            <img src="./ASSETS/Maze Game.png" class="web-img">
+        </div>
+        <div class="card guess">
+            <img src="./ASSETS/guess my number.png" class="web-img">
+        </div>
+        <div class="card brickbreaker">
+            <img src="./ASSETS/Brick Breaker.png" class="web-img">
+        </div>
+        <div class="card savethecity">
+            <img src="./ASSETS/savethecity.png" class="web-img">
+        </div>
+        <div class="card battlegame">
+            <img src="./ASSETS/BATTLE GAME.png" class="web-img">
+        </div>
+    </div>
+
+</body>
+</html>
+
+<script>
+
+    var ProjectNames = ["BARBER SHOP" , "Naad Brahma" , "Vibes N'Coffee" , "RENTAL CAR" , "Stay Pawsitive" , "Stylux" , "LoveCare" , "DhyannShala" , "CGI" , "Security & Services" , "Portfolio" , "Forest Project" , "World Wide Travel" , "Shope Ease" , "Dream Cafe" ,"HUMAAN" , "Brahma Sounds" , "Dots and Boxes" , "Zombie Undead" , "Snake Game" , "Syncro Minds" , "Ladder Legacy" , "Hangman Game" , "Aero Blocks Adventure" , "Jungle Matrix" , "TypeRacer" , "Quiz Game" , "Sweet Swipe" , "Archery 3d" , "Puzzle Game" , "Maze Game" , "Guess My Number" , "Brick Breaker" , "Save The City" , "Battle Game"]
+    
+    var styEle = document.head.appendChild(document.createElement("style"))
+
+    var AllCards = document.querySelectorAll(".card")
+    for (let i=0 ; i<ProjectNames.length ; i++){
+        AllCards[i].setAttribute("id" , `a${i}`)
+        styEle.innerHTML += `#a${i}::before{content:"${ProjectNames[i]}";}`
+    }
+
+    document.querySelector(".barber").addEventListener("click" , ()=>{
+        window.open("https://shriyansjindal.github.io/Mr.Barber/" , "_blank")
+    })
+    document.querySelector(".naadbrahma").addEventListener("click" , ()=>{
+        window.open("https://naadbrahma.netlify.app/" , "_blank")
+    })
+    document.querySelector(".vibes").addEventListener("click" , ()=>{
+        window.open("https://pranjal-2507.github.io/Vibes-Coffee-project1-/" , "_blank")
+    })
+    document.querySelector(".rental").addEventListener("click" , ()=>{
+        window.open("https://car-rental-website-project.netlify.app/" , "_blank")
+    })
+    document.querySelector(".staypawsitive").addEventListener("click" , ()=>{
+        window.open("https://patilarya76.github.io/donation/" , "_blank")
+    })
+    document.querySelector(".stylux").addEventListener("click" , ()=>{
+        window.open("https://github.com/Dhruv-Patil-1720/Jungle-Matrix" , "_blank")
+    })
+    document.querySelector(".lovecare").addEventListener("click" , ()=>{
+        window.open("https://kshitij162005.github.io/Lovecare/" , "_blank")
+    })
+    document.querySelector(".dyaanshala").addEventListener("click" , ()=>{
+        window.open("https://taupe-travesseiro-cc575e.netlify.app/" , "_blank")
+    })
+    document.querySelector(".cgi").addEventListener("click" , ()=>{
+        window.open("https://cgibyabhinav.netlify.app/" , "_blank")
+    })
+    document.querySelector(".security").addEventListener("click" , ()=>{
+        window.open("https://bhairvnathsecurityandservices.netlify.app" , "_blank")
+    })
+    document.querySelector(".portfolio").addEventListener("click" , ()=>{
+        window.open("https://github.com/CHINMAYEEHARANE58/Portfolio" , "_blank")
+    })
+    document.querySelector(".forest").addEventListener("click" , ()=>{
+        window.open("https://223vaishu.github.io/Forest-Project/" , "_blank")
+    })
+    document.querySelector(".travel").addEventListener("click" , ()=>{
+        window.open("https://65685030fdefe239cb858531--funny-puffpuff-28c3f3.netlify.app" , "_blank")
+    })
+    document.querySelector(".shopease").addEventListener("click" , ()=>{
+        window.open("https://shreyas2004wagh.github.io/shopease3/" , "_blank")
+    })
+    document.querySelector(".dreamCafe").addEventListener("click" , ()=>{
+        window.open("https://rautsagar214.github.io/cafe-" , "_blank")
+    })
+    document.querySelector(".human").addEventListener("click" , ()=>{
+        window.open("https://codingwithustushar.github.io/HUMAAN/" , "_blank")
+    })
+    document.querySelector(".sound").addEventListener("click" , ()=>{
+        window.open("https://brahmasounds.netlify.app/" , "_blank")
+    })
+
+
+    document.querySelector(".dots").addEventListener("click" , ()=>{
+        window.open("https://shriyansjindal.github.io/Dots-And-Boxes/" , "_blank")
+    })
+    document.querySelector(".zombie").addEventListener("click" , ()=>{
+        window.open("https://atharva279.github.io/FEWD-CA2/" , "_blank")
+    })
+    document.querySelector(".snakeGame").addEventListener("click" , ()=>{
+        window.open("https://pranjal-2507.github.io/Snake_game/" , "_blank")
+    })
+    document.querySelector(".syncro").addEventListener("click" , ()=>{
+        window.open("https://illustrious-lebkuchen-a110cc.netlify.app/" , "_blank")
+    })
+    document.querySelector(".Ladder").addEventListener("click" , ()=>{
+        window.open("https://ladder-legacy.netlify.app/" , "_blank")
+    })
+    document.querySelector(".hangman").addEventListener("click" , ()=>{
+        window.open("https://hangman-game-project1.netlify.app/" , "_blank")
+    })
+    document.querySelector(".aero").addEventListener("click" , ()=>{
+        window.open("https://patilarya76.github.io/FEWD-CA2/" , "_blank")
+    })
+    document.querySelector(".jungle").addEventListener("click" , ()=>{
+        window.open("https://dhruv-patil-1720.github.io/Jungle-Matrix/" , "_blank")
+    })
+    document.querySelector(".TypeRacer").addEventListener("click" , ()=>{
+        window.open("https://6562550e143ed16d009488f9--boisterous-biscuit-0164c9.netlify.app/" , "_blank")
+    })
+    document.querySelector(".quiz").addEventListener("click" , ()=>{
+        window.open("https://janhavi003.github.io/FewdCA2-Quiz/" , "_blank")
+    })
+    document.querySelector(".sweetswipe").addEventListener("click" , ()=>{
+        window.open("https://sweetswipe.netlify.app/" , "_blank")
+    })
+    document.querySelector(".archery").addEventListener("click" , ()=>{
+        window.open("https://bhagirathsarchery3d.netlify.app" , "_blank")
+    })
+    document.querySelector(".puzzle").addEventListener("click" , ()=>{
+        window.open("https://cool-mermaid-b37774.netlify.app/" , "_blank")
+    })
+    document.querySelector(".maze").addEventListener("click" , ()=>{
+        window.open("https://223vaishu.github.io/CA-MAZE-PLAY/" , "_blank")
+    })
+    document.querySelector(".guess").addEventListener("click" , ()=>{
+        window.open("https://frolicking-arithmetic-a5be45.netlify.app/" , "_blank")
+    })
+    document.querySelector(".brickbreaker").addEventListener("click" , ()=>{
+        window.open("https://joyceubale.github.io/Brick-Breaker-CA-2/" , "_blank")
+    })
+    document.querySelector(".savethecity").addEventListener("click" , ()=>{
+        window.open("https://shreyas2004wagh.github.io/CA2_FEWD_/" , "_blank")
+    })
+    document.querySelector(".battlegame").addEventListener("click" , ()=>{
+        window.open("https://codingwithustushar.github.io/battle-git/" , "_blank")
+    })
+
+</script>

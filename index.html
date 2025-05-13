@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="coderell" content="width=device-width, initial-scale=1.0">
+    <title>SQUAD-56</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- google font  -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:500,600,700,900&display=swap" rel="stylesheet">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Tweenmax GSAP  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="overlay first"></div>
+        <div class="overlay second"></div>
+        <div class="overlay third"></div>
+
+        <div class="nav">
+            <div class="logo">SQUAD-56<span class="reg">&reg;</span></div>
+            <a href="about.html"><div class="logo1"><img src="./ASSETS/People.png" width="20px" height="20px">  MEMBERS<span class="reg"></span></div></a>
+            <a href="projects.html"><div class="logo2"><img src="./ASSETS/icons8-projects-50.png" width="20px" height="20px">  PROJECTS<span class="reg"></span></div></a>
+        </div>
+
+        <div class="product-desc">
+            <p>The Best Squad is here!!</p>
+        </div>
+
+        <div class="product-text">
+            <h1 class="product-title" id="languageText">SQUAD-56</h1>
+        </div>
+
+        <div class="product-desc">
+            
+            <button class="button-82-pushable button" role="button">
+            
+                <span class="button-82-front text">
+                  EXPLORE
+                </span>
+              </button>
+        </div>
+
+    
+    </div>
+
+    <script>
+        TweenMax.to('.first', 1.5, {
+            delay: .2,
+            left: '-100%',
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.to('.second', 1.5, {
+            delay: .4,
+            left: '-100%',
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.to('.third', 1.5, {
+            delay: .6,
+            left: '-100%',
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from('.logo', 1, {
+            delay: 0.8,
+            opacity: 0,
+            x: -20,
+            ease: Expo.easeInOut
+        })
+        TweenMax.from('.logo1', 1, {
+            delay: 1,
+            opacity: 0,
+            x: -20,
+            ease: Expo.easeInOut
+        })
+        TweenMax.from('.logo2', 1, {
+            delay: 1.2,
+            opacity: 0,
+            x: -20,
+            ease: Expo.easeInOut
+        })
+        TweenMax.from('.menu', 1, {
+            delay: 0.5,
+            opacity: 0,
+            x: -20,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from('.search', .8, {
+            delay: 1.6,
+            opacity: 0,
+            x: -20,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from('.bag', 1, {
+            delay: 1.6,
+            opacity: 0,
+            x: -20,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.staggerFrom('.media ul li', 1, {
+            delay: 2,
+            opacity: 0,
+            x: -20,
+            ease: Power3.easeInOut
+        }, 0.08)
+
+        TweenMax.from('.size', 1, {
+            delay: 1.8,
+            opacity: 0,
+            x: -20,
+            ease: Expo.easeInOut
+        })
+        TweenMax.staggerFrom('.size ul li', .3, {
+            delay: 2,
+            opacity: 0,
+            y: 20,
+            ease: Power3.easeInOut
+        }, 0.08)
+        TweenMax.from('.bottom-right ul li:first-child', .5, {
+            delay: 2.4,
+            opacity: 0,
+            x: -20,
+            ease: Expo.easeInOut
+        })
+        TweenMax.from('.bottom-right ul li:last-child', .6, {
+            delay: 2.4,
+            opacity: 0,
+            x: -20,
+            ease: Expo.easeInOut
+        })
+        TweenMax.from('.bottom-img', 1, {
+            delay: 2.4,
+            opacity: 0,
+            x: -20,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from('.product-title', 3, {
+            delay: 0.8,
+            opacity: 0,
+            y: 50,
+            ease: Expo.easeInOut
+        })
+        TweenMax.from('.product-img', 1, {
+            delay: 4.2,
+            opacity: 0,
+            y: -800,
+            ease: Expo.easeInOut
+        })
+        TweenMax.from('.product-desc p', 3, {
+            delay: 2,
+            opacity: 0,
+            y: -50,
+            ease: Expo.easeInOut
+        })
+        TweenMax.from('.product-desc button', 3, {
+            delay: 2,
+            opacity: 0,
+            y: -50,
+            ease: Expo.easeInOut
+        })
+    </script>
+</body>
+
+</html>
+<script src="./app.js"></script>

@@ -1,0 +1,166 @@
+body{
+    background-color: rgba(0, 0, 0, 0.92);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+body::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 5px grey; 
+border-radius: 10px;
+}
+body::-webkit-scrollbar{
+    background-color:transparent ;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: rgb(255, 41, 41);
+    border-radius: 20px;
+}
+.logo-img{
+    background-image: url(ASSETS/SQUAD56LOGO-removebg-preview.png);
+    background-size: 100% 100%;
+    background-position: center;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    /* top: 20px; */
+    right: 20px;
+}
+.reg{
+    font-size: 15px;
+    position: absolute;
+}
+.logo{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    color: white;
+    font-size: 23px;
+    font-weight: bolder;
+    cursor: pointer;
+    font-family: 'Inria Sans', sans-serif;
+}
+.heading{
+    color: red;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 30px;
+    margin: 30px 0px 0px;
+    text-align: center;
+}
+
+.websites{
+    color: #2B2B2B;
+    font-size: 16vw;
+    font-weight: 600;
+    position: relative;
+    bottom: 10px;
+    margin-top: 2vw;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: 25vw 25vw 25vw;
+    color: white;
+    grid-row-gap: 35px;
+    grid-column-gap: 50px;
+    place-content: center;
+    position: relative;
+    bottom: 6.5vw;
+}
+
+p{
+    margin: 0;
+}
+#project{
+    font-weight: 800;
+    filter: drop-shadow(0 0 2px red);
+    letter-spacing: 2px;
+}
+
+h1 , h5{
+    margin: 10px;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background-color: black;
+    font-family: 'Inria Sans', sans-serif;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    border: 3px solid white;
+    /* box-shadow: 0 0 0 0 red; */
+    cursor: pointer;
+}
+
+.card::before{
+    content: "";
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.683);
+    transition: all 0.5s ease;
+    transform: scale(0%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:xx-large;
+    
+}
+
+.card:hover::before{
+    transform: scale(100%);
+}
+
+.card:hover{
+    border: 3px solid rgb(239, 68, 68);
+    box-shadow: 0 0 8px 8px rgb(239, 68, 68);
+    /* transform: scale(1.2); */
+}
+
+.web-img{
+    width: 382px;
+    height: 200px;
+}
+
+.games{
+    bottom: 100px;
+    z-index: -1;
+}
+
+.games-container{
+    bottom: 180px;
+}
+
+@media all and (max-width: 1000px){
+    .logo-img{
+        width: 80px;
+        height: 80px;
+    }
+    #project{
+        margin-top: 20vw;
+    }
+    .logo{
+        top: 38px;
+    }
+    .card-container{
+        grid-template-columns: auto;
+        padding: 10px 35px;
+    }
+    .games-container{
+        bottom: 0;
+    }
+    .games{
+        bottom: 0;
+    }
+}
